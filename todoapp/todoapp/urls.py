@@ -23,7 +23,7 @@ from todolist.views import (
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     path('api/todo/', ToDoItemListCreateView.as_view(), name='todo-list-create'),
     path('api/todo/<int:pk>/', ToDoItemRetrieveUpdateDestroyView.as_view(), name='todo-item-retrieve-update-destroy'),
 ]
